@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Motion</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M24,9 C15.7157288,9 9,15.7157288 9,24 C9,32.2842712 15.7157288,39 24,39" id="path-1"></path>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="15" height="30" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <circle id="path-3" cx="24" cy="24" r="11"></circle>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Motion">
+            <path d="M28,35 C34.0751322,35 39,30.0751322 39,24 C39,17.9248678 34.0751322,13 28,13" id="Oval-2-Copy-2" fill="#D9D9D9"></path>
+            <use id="Oval-2" stroke="#979797" mask="url(#mask-2)" stroke-width="4" fill="#FFFFFF" stroke-dasharray="12,2,5,2" xlink:href="#path-1"></use>
+            <g id="Oval-2-Copy">
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                <circle stroke="#979797" stroke-width="2" cx="24" cy="24" r="10"></circle>
+            </g>
+        </g>
+    </g>
+</svg>
