@@ -10,7 +10,7 @@
 	Typography
 -------------------------------------------------------------------------------*/
 
-@import url(http://fonts.googleapis.com/css?family=Cutive%20Mono:400);
+@import url(https://fonts.googleapis.com/css?family=Cutive%20Mono:400);
 
 p {
 	font-size: 18px;
@@ -78,7 +78,7 @@ a:hover, a:focus {
 	transition: background-color, color, 0.3s;
 }
 body {
-	font-family: "Cutive Mono";
+	font-family: "Cutive Mono","微軟正黑體",'Open Sans', sans-serif;
 	font-weight: 400;
 	color: #fff;
 }
@@ -473,7 +473,10 @@ a.nav_button:visited{
 
 
 
-
+#about-text{
+	line-height: 1.9;
+    padding: 3% 10%;
+}
 
 /* icons */
 

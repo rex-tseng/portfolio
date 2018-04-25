@@ -54,7 +54,7 @@ $(document).ready(function() {
 
 
 
-
+console.log('Gotcha!  ;) ')
 //vue
 
 
@@ -75,16 +75,6 @@ var outer_data={
   ] }
   
   
-var vm=new Vue({
-  el: ".works",
-  data: outer_data
-});
-
-
-//footer
-Vue.component('my-footer' ,{
-	template:'  <p><div>A custom cdsfsdfsdfomponent!</div></p>'
-})
 
 
 
