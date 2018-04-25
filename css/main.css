@@ -485,3 +485,19 @@ a.nav_button:visited{
 	height: auto;
 }
 }
+
+/* ------------------------------------------------------------------------------
+	Mobile fine tune
+-------------------------------------------------------------------------------*/
+#divider{
+	padding: 50px;
+}
+
+@media screen and (max-width: 600px) {
+    #divider{
+    	padding: 10px;
+    }
+    .section{
+    	    padding: 50px 0 0;
+    }
+}
