@@ -301,11 +301,10 @@
 //確保html載入後執行
 window.addEventListener("DOMContentLoaded", function() {
 
-
   document.querySelector('#MachiX').addEventListener('click',function(e){
     ga('send', 'event', '作品','點擊','MachiX');
   })
-  document.getElementById('#VAULT').addEventListener('click',function(e){
+  document.querySelector('#VAULT').addEventListener('click',function(e){
     ga('send', 'event', '作品','點擊','VAULT');
   })
   document.getElementById('#About').addEventListener('click',function(e){
@@ -313,6 +312,7 @@ window.addEventListener("DOMContentLoaded", function() {
   })
 
 }, false);
+
   </script>
 
 
