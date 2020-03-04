@@ -303,12 +303,17 @@ window.addEventListener("DOMContentLoaded", function() {
 
   document.querySelector('#MachiX').addEventListener('click',function(e){
     ga('send', 'event', '作品','點擊','MachiX');
+    console.log(MachiX);
   })
   document.querySelector('#VAULT').addEventListener('click',function(e){
     ga('send', 'event', '作品','點擊','VAULT');
+    console.log(VAULT);
+
   })
   document.getElementById('#About').addEventListener('click',function(e){
     ga('send', 'event', '頁面','點擊','About');
+    console.log(About);
+
   })
 
 }, false);
