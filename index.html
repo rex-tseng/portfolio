@@ -13,7 +13,7 @@
 <meta property="og:title" content="Rex Tseng | UI/UX Designer" >
 <meta property="og:url" content="https://rex-tseng.github.io/portfolio/index.html">
 <meta property="og:image" content="images/ogImg.png">
-<meta property="og:description" content="I have a great passion for design specifically include UI/UX design and  motion graphic." >
+<meta property="og:description" content=" I have a great passion for design specifically include UI/UX design and motion graphic." >
 
 
 <title>Rex Tseng | UI/UX Designer</title>
@@ -25,8 +25,38 @@
 <link rel="stylesheet" href="css/responsive.css">
 <link rel="stylesheet" href="css/animate.min.css">
 <link rel="stylesheet" href="css/font-icon.css">
-
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-159646019-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-159646019-1');
+</script>
+
+<script>
+  document.getElementById('#MachiX').addEventListener('click',function(e){
+    ga('send', 'event', 'Event','點擊','MachiX');
+  })
+  document.getElementById('#VAULT').addEventListener('click',function(e){
+    ga('send', 'event', 'Event','點擊','VAULT');
+  })
+  document.getElementById('#About').addEventListener('click',function(e){
+    ga('send', 'event', 'Event','點擊','About');
+  })
+
+
+
+
+
+
+  </script>
+
 </head>
 <body>
 <!-- header top section -->
@@ -36,7 +66,7 @@
       <nav class="navigation" role="navigation">
         <ul class="primary-nav">
             <li ><a href="index.html" class="nav_button">Work</a></li>
-            <li ><a href="about.html" class="nav_button">About me</a></li>
+            <li ><a id="About" href="about.html" class="nav_button" onclick="ga('send', 'event', 'Event','點擊','About')">About me</a></li>
             <li ><a href="https://drive.google.com/file/d/1TPCcObAyZHpH20zNolpvF_6ryCrH7IXM/view?usp=sharing" class="nav_button">Resume</a></li>
         </ul>
       </nav>
@@ -51,7 +81,7 @@
       <div class="col-md-7 col-sm-6 hero">
         <div class="hero-content animated fadeInUp">
           <h1>Hello, I am Rex.</h1>
-          <h3>Sr. UI/UX Designer @ <a href="https://mithvault.io/" class="highlight">Mithril</a></h3>
+          <h3>Sr. UI/UX Designer @ <a href="https://machix.com/en/" class="highlight">Mithril & Machi X</a></h3>
         </div>
         <!-- hero --> 
       </div>
@@ -83,7 +113,27 @@
     <div class="row animated fadeIn ">
 
 
-      <div class="col-sm-6 portfolio-item"> <a href="work-vtapp.html" class="portfolio-link">
+      <div class="col-sm-6 portfolio-item" data-aos="fade-up" data-aos-duration="1500"> <a id="MachiX" href="work-machix.html" class="portfolio-link" onclick="ga('send', 'event', 'Event','點擊','MachiX')">
+        <div class="caption">
+          <div class="caption-content">
+            <h3>MachiX (Web/iOS/Android)</h3>
+            <h4>Product Design</h4>
+          </div>
+        </div>
+        <img src="images/portfolio/cover_machix.jpg" class="img-responsive" alt=""> </a> </div>
+
+      <div class="col-sm-6 portfolio-item" data-aos="fade-up" data-aos-duration="1500"data-aos-delay="100"> <a id="VAULT" href="work-vault.html" class="portfolio-link" onclick="ga('send', 'event', 'Event','點擊','VAULT')" >
+        <div class="caption">
+          <div class="caption-content">
+            <h3>VAULT (Website)</h3>
+            <h4>Web UI/UX Design</h4>
+          </div>
+        </div>
+        <img src="images/portfolio/cover_VAULT.jpg" class="img-responsive" alt=""> </a> </div>
+
+
+
+      <div class="col-sm-6 portfolio-item" data-aos="fade-up" data-aos-duration="1500"> <a href="work-vtapp.html" class="portfolio-link">
         <div class="caption">
           <div class="caption-content">
             <h3>VoiceTube App (iOS/Android)</h3>
@@ -91,7 +141,9 @@
           </div>
         </div>
         <img src="images/portfolio/cover_app.jpg" class="img-responsive" alt=""> </a> </div>
-      <div class="col-sm-6 portfolio-item"> <a href="work-vtweb.html" class="portfolio-link">
+
+
+      <div class="col-sm-6 portfolio-item" data-aos="fade-up" data-aos-duration="1500"data-aos-delay="100"> <a href="work-vtweb.html" class="portfolio-link">
         <div class="caption">
           <div class="caption-content">
             <h3>VoiceTube Website</h3>
@@ -100,7 +152,7 @@
         </div>
         <img src="images/portfolio/cover_web.jpg" class="img-responsive" alt=""> </a> </div>
       
-      <div class="col-sm-6 portfolio-item"> <a href="work-vtlogo.html" class="portfolio-link">
+      <div class="col-sm-6 portfolio-item" data-aos="fade-up" data-aos-duration="1500"> <a href="work-vtlogo.html" class="portfolio-link">
         <div class="caption">
           <div class="caption-content">
             <h3>VoiceTube Logotype</h3>
@@ -110,7 +162,7 @@
         <img src="images/portfolio/cover_guidline.jpg" class="img-responsive" alt=""> </a> </div>
    
 
-      <div class="col-sm-6 portfolio-item"> <a href="work-prototype.html" class="portfolio-link">
+      <div class="col-sm-6 portfolio-item" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"> <a href="work-prototype.html" class="portfolio-link">
         <div class="caption">
           <div class="caption-content">
             <h3>Hi-fi Prototype</h3>
@@ -118,7 +170,8 @@
           </div>
         </div>
         <img src="images/portfolio/chart.gif" class="img-responsive" alt="" height="600"> </a> </div>
-      <div class="col-sm-6 portfolio-item"> <a href="work-motion.html" class="portfolio-link">
+
+      <div class="col-sm-6 portfolio-item" data-aos="fade-up" data-aos-duration="1500"> <a href="work-motion.html" class="portfolio-link">
         <div class="caption">
           <div class="caption-content">
             <h3>Motion Graphic</h3>
@@ -126,14 +179,15 @@
           </div>
         </div>
         <img src="images/portfolio/cover_motion.gif" class="img-responsive" alt=""> </a> </div>
-      <div class="col-sm-6 portfolio-item"> <a href="work-SWHC.html" class="portfolio-link">
+
+ <!--      <div class="col-sm-6 portfolio-item"data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"> <a href="work-SWHC.html" class="portfolio-link">
         <div class="caption">
           <div class="caption-content">
             <h3>SWHC Coupon</h3>
             <h4>App UI Design</h4>
           </div>
         </div>
-        <img src="images/portfolio/cover_project2.jpg" class="img-responsive" alt=""> </a> </div>
+        <img src="images/portfolio/cover_project2.jpg" class="img-responsive" alt=""> </a> </div> -->
 
        <!--    <div class="col-sm-6 portfolio-item"> <a href="work-projects.html" class="portfolio-link">
         <div class="caption">
@@ -145,17 +199,17 @@
         <img src="images/portfolio/cover_project2.jpg" class="img-responsive" alt=""> </a> </div> -->
 
 
-          <div class="col-sm-6 portfolio-item"> <a href="work-transtuff.html" class="portfolio-link">
+     <!--      <div class="col-sm-6 portfolio-item"data-aos="fade-up" data-aos-duration="1500"> <a href="work-transtuff.html" class="portfolio-link">
         <div class="caption">
           <div class="caption-content">
             <h3>Transtuff website</h3>
             <h4>web develop</h4>
           </div>
         </div>
-        <img src="images/portfolio/cover_transtuff.png" class="img-responsive" alt=""> </a> </div>
+        <img src="images/portfolio/cover_transtuff.png" class="img-responsive" alt=""> </a> </div> -->
 
 
-          <div class="col-sm-6 portfolio-item"> <a href="work-visual.html" class="portfolio-link">
+          <div class="col-sm-6 portfolio-item" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"> <a href="work-visual.html" class="portfolio-link">
         <div class="caption">
           <div class="caption-content">
             <h3>Visual Design</h3>
@@ -165,7 +219,7 @@
         <img src="images/portfolio/cover_Visual.png" class="img-responsive" alt=""> </a> </div>
 
 
-           <div class="col-sm-4 portfolio-item"> <a href="https://medium.com/@mdzeng" class="portfolio-link">
+           <div class="col-sm-4 portfolio-item" data-aos="zoom-in-up" data-aos-duration="1500" data-aos-delay="100"> <a href="https://medium.com/@mdzeng" class="portfolio-link">
         <div class="caption">
           <div class="caption-content">
             <h3>Writings</h3>
@@ -173,7 +227,7 @@
         </div>
         <img src="images/portfolio/cover_medium.png" class="img-responsive" alt=""> </a> </div>
 
-          <div class="col-sm-4 portfolio-item"> <a href="https://vimeo.com/266334819" class="portfolio-link">
+          <div class="col-sm-4 portfolio-item" data-aos="zoom-in-up" data-aos-duration="1500" data-aos-delay="200"> <a href="https://vimeo.com/266334819" class="portfolio-link">
         <div class="caption">
           <div class="caption-content">
             <h3>Side Projects</h3>
@@ -181,7 +235,7 @@
         </div>
         <img src="images/portfolio/cover_hahow.png" class="img-responsive" alt=""> </a> </div>
 
-          <div class="col-sm-4 portfolio-item"> <a href="https://www.linkedin.com/in/rex-tseng/" class="portfolio-link">
+          <div class="col-sm-4 portfolio-item" data-aos="zoom-in-up" data-aos-duration="1500" data-aos-delay="300"> <a href="https://www.linkedin.com/in/rex-tseng/" class="portfolio-link">
         <div class="caption">
           <div class="caption-content">
             <h3>LinkedIn</h3>
@@ -254,5 +308,9 @@
 <script src="js/modernizr.js"></script> 
 <script src="js/main.js"></script>
 <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
