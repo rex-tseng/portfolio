@@ -339,6 +339,38 @@ a.nav_button:visited{
 	transition: .2s cubic-bezier(0.075, 0.82, 0.165, 1);
 
 }
+
+.mx_title{
+	color: #fff;
+	padding: 0 40px;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-weight: 200;
+	letter-spacing: 0.05em;
+
+}
+.mx_describtion{
+	color: #fff;
+	padding: 0 40px;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-weight: 400;
+
+}
+
+.VAULT_title{
+	color: #485EFF;
+	padding: 0 40px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	letter-spacing: 0.05em;
+}
+
+.VAULT_description{
+	color: #9CA6D3;
+	padding: 0 40px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+}
+
 /* ------------------------------------------------------------------------------
 	 Hero content
 -------------------------------------------------------------------------------*/
