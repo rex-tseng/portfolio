@@ -373,7 +373,7 @@ a.nav_button:visited{
 
 .design-process{
     margin-top: 20px;
-    height: 60px;
+    height: 48px;
 
 }
 .process-block{
@@ -387,6 +387,16 @@ a.nav_button:visited{
     font-family: 'IBM Plex Sans', sans-serif;
 	font-weight: 400;
 /*	border-left: 2px solid #fff;*/
+}
+
+.path-process{
+  stroke-dasharray: 12;
+  animation: dash 30s linear;
+}
+@keyframes dash {
+  to {
+    stroke-dashoffset: -300;
+  }
 }
 
 
